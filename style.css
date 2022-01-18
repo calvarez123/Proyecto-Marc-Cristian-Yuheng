@@ -1,14 +1,5 @@
 body{
-    margin: 0; 
-}
-video{
-    position: fixed; /*para fijar el video de fondo de pantalla*/
-    min-height: 100%; /*para establcer un minimo de altura*/
-    min-width: 100%; /*para establcer un minimo de amplio*/
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);   /*esto sirve para centrar el video en el centro*/
-    z-index: -1; /*esto sirve para poner el video como ultima capa de la pagina*/
+    background-color: black;
 }
 .header{
     background-color: black; /*para establecer el color de fondo*/
@@ -44,43 +35,33 @@ video{
     
     
 }
-.footer{
-    display: flex;
-    justify-content: space-between;
-    
-    
-    
-}
-.footer img{
-    
-    width: 7%; /*para asignar un tamaño a las imagenes*/
-   
-}
-.imagenes{
-    
-    width: 30%;
-    text-align: right; /*para alinear los logos a la derecha*/
-    margin-top: 10px;
-    
-}
-.container1 h1{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*para cambiar la fuente del titulo*/
-    font-weight: 1200; /*para darle grosor al titulo*/
-    color: orangered; /*para cambiar el color*/
-    font-size: 50px; /*cambiar el tamaño del titulo*/
-}
-.container1 h2{
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-weight: 800;
-    font-size: 25px;
+.container1{
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    font-size: 16px;
 }
 .container2{
-    font-family: Arial, Helvetica, sans-serif;
     color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    font-size: 16px;
 }
-.item7{
-    width: 80%;
+h1{
+    font-size: 40px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+}
+.item2{
+    width: 4em;
+    
+}
+.item4{
+    width: 4em;
+}
+.item6{
+    width: 4em;
 }
 .item1 { grid-area: uno; }
 .item2 { grid-area: dos; }
@@ -88,51 +69,43 @@ video{
 .item4 { grid-area: quatro; }
 .item5 { grid-area: cinco; }
 .item6 { grid-area: seis; }
-.item7 { grid-area: siete; }
-.item8 { grid-area: ocho; }
-.item9 { grid-area: nueve; }
+.item9 { grid-area: siete; }
+.item10 { grid-area: ocho; }
+.item11 { grid-area: nueve; }
 
+.container1 {
+    display: grid;
+    grid-template-areas:
+      'siete siete '             /*el display grid nos permite maquetar la pagina como nosotros queramos*/
+      'ocho ocho  '
+      'nueve nueve  '
+      'uno dos'
+      'tres quatro '
+      'cinco seis';
+    
+}
 .container2 {
     display: grid;
     grid-template-areas:
-      'uno siete'             /*el display grid nos permite maquetar la pagina como nosotros queramos*/
-      'dos siete '
-      'tres siete '
-      'quatro siete'
-      'cinco siete '
-      'seis siete';
+      'uno dos '             /*el display grid nos permite maquetar la pagina como nosotros queramos*/
+      'tres quatro  '
+      'cinco seis  ';
     
-}
-.container1{
-    margin: 10px;
-
 }
 .container2{
-    margin: 10px;
-    border: white solid 2px;
-    width: 70%;
-    border-radius: 7px; /*poner los marcos redondos*/
-
+    margin-top: 50px;
+    width: 12%;
 }
-.footer{
-    margin: 10px;
-    color: white;
+.copy{
     
-}
-.container2 a{
     color: white;
-    font-weight: bold;
-    font-style: italic;  /*poner letra en cursiva*/
-}
-
-.item7{
-    margin-top: 100px;
-    margin-left: 50px;
-}
-.container2 p{
-    text-indent: 2%;  /*poner sangria*/
-    text-align: justify; /*justificar el parrafo*/
+    font-weight: lighter;
 
 }
+.footerhr{
+    margin-top: 250px;
+}
+
+
 
 
