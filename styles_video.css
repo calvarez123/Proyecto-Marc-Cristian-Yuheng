@@ -1,0 +1,109 @@
+body{
+    background-color: black;
+}
+.container1 h1{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif; /*para cambiar la fuente del titulo*/
+    font-weight: 1200; /*para darle grosor al titulo*/
+    color: orangered; /*para cambiar el color*/
+    font-size: 50px; /*cambiar el tamaño del titulo*/
+}
+.container1 h2{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 800;
+    font-size: 25px;
+    color: white;
+}
+.header{
+    background-color: black; /*para establecer el color de fondo*/
+    
+    opacity: 0.6;
+    
+    
+    
+}
+.header img{
+    height: 7em;    /*el tamaño de la imagen*/
+    
+}
+.flex-container{
+    display: flex; /*para aplicar la funcion flex*/
+    justify-content: flex-start; /*empezar el flex desde el principio*/
+    align-items: flex-end; /*aliniar items al final de su tamaño osea abajo*/
+    justify-content: space-between; /*ajusta los div a los laterales*/
+    
+}
+.flex-container div{
+    margin: 10px; /*para deajar margen entre los div*/
+}
+.flex-container a{
+    
+    display: flex;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    
+    
+    
+}
+.container2{
+   
+    border: white solid 2px;
+    width: 1000px;
+    border-radius: 7px; /*poner los marcos redondos*/
+
+}
+.item2{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p.item2::first-letter{   /*aixo serveix per a agafar la primera lletra i posar-la com a lletra capital*/
+    font-size: 3em;
+    font-family: serif;
+}
+.container3{
+    margin-top: 20px;
+    border: white solid 2px;
+    width: 50%;
+    border-radius: 7px; /*poner los marcos redondos*/
+
+}
+.item8{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 2%;
+}
+p.item8::first-letter{   /*aixo serveix per a agafar la primera lletra i posar-la com a lletra capital*/
+    font-size: 3em;
+    font-family: serif;
+}
+.container3{
+   
+    border: white solid 2px;
+    width: 1000px;
+    border-radius: 7px; /*poner los marcos redondos*/
+
+}
+.container3 p{
+    margin-left: 10px;
+}
+.container2 p{
+    margin-left: 10px;
+}
+.container2 iframe{
+    margin-left: 10px;
+}
+.container3 video{
+    margin-left: 10px;
+    margin-top: -50px;
+}
+.footer{
+    color: white;
+    margin-left: 10px;
+    
+}
+
+
+
