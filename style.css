@@ -42,7 +42,115 @@ body{
     font-size: 16px;
 }
 .container2{
+    color: white;body{
+    background-color: black;
+}
+.header{
+    background-color: black; /*para establecer el color de fondo*/
+    
+    opacity: 0.6;
+    
+    
+}
+.header img{
+    height: 7em;    /*el tamaño de la imagen*/
+    
+}
+.flex-container{
+    display: flex; /*para aplicar la funcion flex*/
+    justify-content: flex-start; /*empezar el flex desde el principio*/
+    align-items: flex-end; /*aliniar items al final de su tamaño osea abajo*/
+    justify-content: space-between; /*ajusta los div a los laterales*/
+    
+}
+.flex-container div{
+    margin: 10px; /*para deajar margen entre los div*/
+}
+.flex-container a{
+    
+    display: flex;
+    margin-left: 10px;
     color: white;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    text-decoration: none;
+    font-weight: 900;
+    
+    
+}
+.container1{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    font-size: 16px;
+}
+.container2{
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+    font-size: 16px;
+}
+h1{
+    font-size: 40px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 10px;
+}
+.item2{
+    width: 4em;
+    
+}
+.item4{
+    width: 4em;
+}
+.item6{
+    width: 4em;
+}
+.item1 { grid-area: uno; }
+.item2 { grid-area: dos; }
+.item3 { grid-area: tres; }
+.item4 { grid-area: quatro; }
+.item5 { grid-area: cinco; }
+.item6 { grid-area: seis; }
+.item9 { grid-area: siete; }
+.item10 { grid-area: ocho; }
+.item11 { grid-area: nueve; }
+
+.container1 {
+    display: grid;
+    grid-template-areas:
+      'siete siete '             /*el display grid nos permite maquetar la pagina como nosotros queramos*/
+      'ocho ocho  '
+      'nueve nueve  '
+      'uno dos'
+      'tres quatro '
+      'cinco seis';
+    
+}
+.container2 {
+    display: grid;
+    grid-template-areas:
+      'uno dos '             /*el display grid nos permite maquetar la pagina como nosotros queramos*/
+      'tres quatro  '
+      'cinco seis  ';
+    
+}
+.container2{
+    margin-top: 50px;
+    width: 12%;
+}
+.copy{
+    
+    color: white;
+    font-weight: lighter;
+
+}
+.footerhr{
+    margin-top: 250px;
+}
+
+
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin-left: 10px;
     font-size: 16px;
