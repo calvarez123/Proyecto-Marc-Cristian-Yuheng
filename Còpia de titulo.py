@@ -2,7 +2,15 @@
 import pymysql
 class DataBase:
     def _init_(self):
-        self.connection = pymysql.connect()
+        self.connection = pymysql.connect(
+            host='52.148.209.79',
+            user='cym',
+            password='password',
+            db='projecte_1cym'
+        )
+        self.cursor = self.connection.cursor()
+        print('COnexion establecida')
+database = DataBase()
 
 #Connectar al BBDD
 
@@ -113,22 +121,71 @@ def menuloged():
 
             error = True
 def menu_options_loged(opc):
+    while True:
+        if opc == '1':
+            login2='logout'
+            return login2
 
-    if opc == '1':
-        login2='logout'
-        return login2
+        elif opc == '2':
+            while True:
+                print('Hello ',user[0],'lets play!!')
+                print('=' * 70, 'Adventures', '=' * 70)
+                print()
+                print('Id Adventure       ', 'Adventure', ' ' * 40, 'Description')
+                print('*' * 152)
+                # adventure1
+                print()
+                print('1', ' ' * 17, 'Lucha contra duendes', ' ' * 29,
+                      '"Ya es la hora, héroe de nuestra patria, vosotros representáis el futuro de los ')
+                print(' ' * 70, 'humanos, luchad por lo que quereis, luchad por vuestra patria!!!". Te han ')
+                print(' ' * 70, 'obligado a alistarse en el ejército por la guerra que ha provocado los humanos')
+                print(' ' * 70, 'a los duendes por conquistas de tierras, sigue los órdenes del comandante o ')
+                print(' ' * 70, 'intenta sobrevivir.')
+                # adventure1
+                # adventure2
+                print()
+                print('2', ' ' * 17, 'Muertos vivientes', ' ' * 32,
+                      'Despues de la obtencion del poder, sigues caminando a la vuelta del bosque para')
+                print(' ' * 70, 'volver a casa, pero los demonios tambien han pasado por aqui, y han arruinado ')
+                print(' ' * 70, 'todo el bosque y matando a los elfos que estan viviendo alli, y la magia oscura ')
+                print(' ' * 70, 'esta en todas partes, tienes que ir con cuidado.')
+                # adventure2
+                # adventure3
+                print()
+                print('3', ' ' * 17, 'Caza final', ' ' * 39,
+                      'Un real caza contra el jefe final el Democratius, el rey de los demonios, tienes')
+                print(' ' * 69, ' todas las habilidades que aprendistes en en las aventuras anteriores, vamos ')
+                print(' ' * 70, 'podras hacerlo.')
+                # adventure3
+                whichplay=input("Choose a adventure to play(0 to go back)")
+                if whichplay=='0':
+                    opc=menuloged()
+                    break
+                elif whichplay=='1':
+                    print('=' * 70, 'Characters', '=' * 70)
+                    print('1) Kristoffer')
+                    print('2) Eivind')
+                    choose_character=input('Choose a Character')
+                    if choose_character==1 or choose_character==2:
+                        print()
+                        print('=' * 150)
+                        print('Lucha contra duendes')
+                        print('=' * 150)
+                if whichplay!='0' or  whichplay!='1' or  whichplay!='2' or  whichplay!='3':
+                    input('**********Invalid option**********\n\n Press enter to continue')
 
-    elif opc == '2':
-        print('='*50,'Adventures','='*50)
 
-    elif opc == '3':
-        print('opcion 3')
-    elif opc == '4':
-        print('opcion 4')
-    elif opc == '5':
-        print(232)
-        exit1='exit'
-        return exit1
+
+
+
+        elif opc == '3':
+            print('opcion 3')
+        elif opc == '4':
+            print('opcion 4')
+        elif opc == '5':
+            print(232)
+            exit1='exit'
+            return exit1
 
 
 def menu_options(opc):
@@ -246,7 +303,7 @@ def menu_options(opc):
                             contadorminus = contadorminus + 1
                 if contadorminus != 0 and contadormayus != 0:
                     validation5 = True
-                    salir = True
+                    salir12 = True
                 else:
                     print("PASSWORD has to contain mayus and minus ")
                     validation1 = False
@@ -254,7 +311,7 @@ def menu_options(opc):
                     validation3 = False
                     validation4 = False
                     break
-            if salir == True:
+            if salir12 == True:
                 print("USER CREATED")
                 input("Press ENTER to continue")
                 user=[username,password,True]
@@ -274,7 +331,7 @@ def menu_options(opc):
 
 while True:
     login1=menu_options(menunologin())
-
+    user=login1
     if login1=='exit':
         print("BYE")
         break
