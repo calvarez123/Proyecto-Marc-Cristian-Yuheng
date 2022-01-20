@@ -7,8 +7,8 @@ def getUser():
     rows=cur.fetchall()
     dic={}
     v=1
-   
-    dic[rows[0][1]]={}
-    dic[rows[0][1]]['password']=rows[0][2]
-    dic[rows[0][1]]['userId']=rows[0][0]
+    for i in range(len(rows)):
+        dic[rows[i][1]]={}
+        dic[rows[i][1]]['password']=rows[0][2]
+        dic[rows[i][1]]['userId']=rows[0][0]
     return dic
