@@ -1,0 +1,20 @@
+USUARIOS: username(pk) , password
+PERSONAJES: nombre(pk) , descripcion
+AVENTURAS: nombre, descripcion,
+PARTIDA:usuario, personaje fecha y hora, desicions
+PASOS: descripcion, paso al final o no, opcions, paso anterior, descripcion 
+opciones: descripcion, respuestas id opciones
+
+
+
+
+
+
+
+
+
+
+
+
+
+las aventuras son protagonizadas por diferentes personajes , y los personajes pueden protagonizar muchas aventuras
